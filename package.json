@@ -4,7 +4,9 @@
   "description": "Primeira api",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Paulo silva",
   "license": "ISC",
@@ -13,6 +15,8 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "jsonwebtoken": "^5.4.1",
-    "mongoose": "^4.2.5"
-  }
+    "mongoose": "^4.2.5",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
